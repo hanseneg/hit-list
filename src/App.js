@@ -7,7 +7,9 @@ class App extends React.Component {
     render() {
         return (
             <div>
+                <Header />
                 <List />
+                <Footer />
             </div>
         )
     }
