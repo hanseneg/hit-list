@@ -17,11 +17,14 @@ class List extends React.Component{
     }
 
     render() {
-        return(
-            <div>
+        const mappedList = this.state.persons.map(person => {
+            return(
+                <div>
 
-            </div>
-        )
+                </div>
+            )
+        })
+           
     }
 }
 
