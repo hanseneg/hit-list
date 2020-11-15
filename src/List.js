@@ -2,7 +2,7 @@ import React from 'react'
 const axios = require('axios')
 // import axios from 'axios'
 
-class List extends React.Component{
+class List extends React.Component {
     constructor() {
         super()
         this.state = {
@@ -21,12 +21,10 @@ class List extends React.Component{
     render() {
         const mappedList = this.state.persons.map(person => {
             return(
-                <React.StrictMode>
                 <div>
-                    <img alt={person.name}>{person.image}</img>
+                    <img alt={person.name} src={person.image}></img>
                     <h3>{person.name}</h3>
                 </div>
-                </React.StrictMode>
             )
         })
           return(
