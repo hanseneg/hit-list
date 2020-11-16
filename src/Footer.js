@@ -1,9 +1,10 @@
 import React from 'react'
+import './style.css'
 
 class Footer extends React.Component {
     render() {
         return(
-            <div>Copyright 2020 @hanseneg</div>
+            <div className='footer'>Copyright 2020 @hanseneg</div>
         )
     }
 }

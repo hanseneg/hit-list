@@ -22,8 +22,13 @@ class List extends React.Component {
         const mappedList = this.state.persons.map(person => {
             return(
                 <div>
-                    <img alt={person.name} src={person.image}></img>
-                    <h3>{person.name}</h3>
+                    <img 
+                        alt={person.name} 
+                        src={person.image}
+                        className='img'
+                        >
+                    </img>
+                    <h3 className='name'>{person.name}</h3>
                 </div>
             )
         })
